@@ -263,12 +263,12 @@ h4 {
 }
 
 .section__para {
-    text-align: center;
     color: #7c8ba1;
     max-width: 576px;
     font-weight: 500;
     line-height: 1.625;
     padding: 24px; 
+    font-size: 14px;
 }
 
 .feature__row {
@@ -391,11 +391,50 @@ h4 {
 }
 
 .values__img {
-    height: 428px;
-    width: 428px;
+    width: 100%;
+    max-width: 448px;
 }
 
 .values__list {
     display: flex;
     padding-right: 24px;
+}
+
+/* PRICING */
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.plan {
+    width: 100%;
+    max-width: 384px;
+    margin: 64px 32px 0 0;
+    padding-top: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba (0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba (0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba (0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06);
+    position: relative;
+    z-index: 100;
+    background: #fff;
+}
+
+.plan__stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+}
+
+.plan__top {
+    padding: 32px;
+    text-align: center;
 }
