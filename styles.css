@@ -79,13 +79,15 @@ nav {
 
 .nav__row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 32px;
   margin: 0 auto;
 }
 
 .nav__links {  
   padding-bottom: 2px;
+  display: flex;
+  align-items: center;
 }
 
 .nav__logo {
@@ -141,6 +143,61 @@ nav {
   background: transparent;
   border: none;
   transition: all 300ms ease;
+}
+
+.btn__menu--close {
+  position: fixed;
+  top: 24px;
+  right: 18px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 378px;
+  margin: 24px 16px;
+  padding: 32px;
+  background-color: #fff;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(300%);
+  transition: all 300ms ease;
+}
+
+.modal__links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__link {
+  color: #1a202c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 8px 0;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.modal__link--primary {
+  color: #f7fafc;
+  padding: 12px 32px;
+  background: #6415ff;
+  border-radius: 500px;
+  border: none;
+}
+
+a {
+  display: inline;
+  text-decoration: none;
 }
 
 /* HEADER */
