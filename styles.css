@@ -84,8 +84,7 @@ nav {
   margin: 0 auto;
 }
 
-.nav__links {
-  display: none;
+.nav__links {  
   padding-bottom: 2px;
 }
 
@@ -138,7 +137,11 @@ nav {
   align-items: center;
 }
 
-
+.btn__menu {
+  background: transparent;
+  border: none;
+  transition: all 300ms ease;
+}
 
 /* HEADER */
 
@@ -926,8 +929,6 @@ footer {
 /* SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
 
 @media (max-width: 728px) {
-
-
 .row {
   flex-direction: column;
 }
