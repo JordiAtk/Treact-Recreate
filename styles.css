@@ -922,3 +922,14 @@ footer {
   background: rgb (116,44,255);
   border: 1px solid rgb(97, 106, 118);
 }
+
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
+
+@media (max-width: 728px) {
+
+
+.row {
+  flex-direction: column;
+}
+
+}
