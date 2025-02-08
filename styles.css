@@ -195,8 +195,23 @@ nav {
   border: none;
 }
 
-@media (min-width:768px) {
+.burger__menu{
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.burger__menu:hover {
+  color: #6415ff;
+}
+
+@media (min-width:1024px) {
   .burger__menu {
+    display: none;
+  }
+}
+
+@media (max-width:1024px) {
+  .nav__links{
     display: none;
   }
 }
