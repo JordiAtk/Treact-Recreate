@@ -432,15 +432,38 @@ h4 {
 
 /* QUALITY WORK */
 
-.quality__img {
-  max-width: 400px;
-  z-index: 1;
-  padding-left: 24px;
+#quality .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.quality__img {
+  width: 100%;
+  max-width: 576px;
+  z-index: 1;
+}
+
+
 .quality__description {
-  text-align: center;
-  flex-direction: column;
+  max-width: 576px;
+    margin-right: 64px;
+}
+
+#quality .section__title {
+  line-height: 1.25;
+}
+
+#quality .btn {
+  margin-top: 32px;
+}
+
+.quality__img--wrapper {
+  border-radius: 4px;
+  border: 1px solid rgb(229, 231, 235);
+  position: relative;
+  margin: 0 56px;
+  z-index: 2;
   display: flex;
 }
 
